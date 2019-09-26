@@ -1,1 +1,3 @@
-print!(Hello): "Hello world!" qwerty
+<<<<<<< HEAD
+print: "Hello world!" qwerty
+>>>>>>> master
