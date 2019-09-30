@@ -29,13 +29,13 @@ setTimeout(()=>{
                 location.href="https://www.google.com";
             }
 
-            if (nextPage)
-                document.getElementsByClassName("cur")[0].nextElementSibling.firstChild.click();
+            if (nextPage){
+                document.getElementsByClassName("cur")[0].nextElementSibling.firstChild.click();}
         }
         else {
             setInterval(()=>{
-                if (Math.random()>0.7)
-                    location.href="https://www.google.com";
+                if (Math.random()>0.7){
+                    location.href="https://www.google.com";}
                 let index = Math.floor(Math.random()*links.length);
                 if (links[index].href.indexOf("xn----7sbab5aqcbiddtdj1e1g.xn--p1ai")!=-1){
                     links[index].click();
