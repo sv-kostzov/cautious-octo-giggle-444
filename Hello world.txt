@@ -1,3 +1,0 @@
-<<<<<<< HEAD
-print: "Hello world!" qwerty
->>>>>>> master
