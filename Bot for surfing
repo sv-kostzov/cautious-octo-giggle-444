@@ -8,22 +8,27 @@
 // @grant        none
 // ==/UserScript==
 
-let keywords = ["Гобой","Флейта","Тромбон","Волторна","Кларнет"];
-let keyword = keywords[Math.floor(Math.random()*keywords.length)];
-let nextPage= true;
-document.getElementsByName("q")[0].value="Флейта";
-try {
-    document.getElementsByName("btnK")[0].click();
-} catch (e) {
-    let links = document.links;
-    for (let i=0; i<links.length; i++) {
-        if (links[i].href.indexOf("xn----7sbab5aqcbiddtdj1e1g.xn--p1ai")!=-1 && links[i].href.indexOf("webcache")==-1)
-        {
+setTimeout(() =>{
+    let keywords = ["Гобой","Флейта","Тромбон","Волторна","Кларнет"];
+    let keyword = keywords[Math.floor(Math.random()*keywords.length)];
+    let nextPage= true;
+    document.getElementsByName("q")[0].value=keyword;
+    try {
+        document.getElementsByName("btnK")[0].click();
+    } catch (e) {
+        let links = document.links;
+        for (let i=0; i<links.length; i++) {
+            if (links[i].href.indexOf("xn----7sbab5aqcbiddtdj1e1g.xn--p1ai")!=-1 && links[i].href.indexOf("webcache")==-1){
+                nextPage = false;
+                links[i].click();
+            }
+        }
+        if (document.getElementsByClassName("cur")[0].innerText==10){
             nextPage = false;
-            links[i].click();
+            location.href="https://www.google.com/";
+        }
+        if (nextPage){
+            document.getElementsByClassName("cur")[0].nextElementSibling.firstChild.click();
         }
     }
-    if (nextPage){
-        document.getElementsByClassName("cur")[0].nextElementSibling.firstChild.click();
-    }
-}
+}, 3000);
