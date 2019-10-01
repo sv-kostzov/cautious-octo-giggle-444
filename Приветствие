@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Приветствие</title>
+</head>
+<body>
+	<script>
+		let message = 'Привет, ';
+		let a = prompt('Введите своё имя');
+		alert(message + a + '!');
+	</script>
+</body>
+</html>
