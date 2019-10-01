@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Расчёт кинетической энергии тела</title>
+</head>
+<body>
+	<script>
+		let m = prompt('Введите массу тела, в кг');
+		let v = prompt('Введите скорость тела, в км/ч');
+		let s = (10/36*v).toFixed(2);
+		alert ('Кинетическая энергия тела равна ' + (s*s*m/2).toFixed(1) +' Дж');
+	</script>
+</body>
+</html>
