@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Время с полуночи и до полуночи</title>
+</head>
+<body>
+  <script>
+      let [h,m] = prompt('Напишите время в формате ЧЧ:ММ').split(':');
+	  let s = 60;
+	  let d = 1440;
+	  alert ('C полуночи прошло ' + (h*s*s + m*s) + ' сек. \nC полуночи прошло ' + (h*s + m*1) + ' мин. \nДо полуночи осталось ' + (d-(h*s + m*1)) + ' мин.');
+  </script>
+</body>
+</html>
