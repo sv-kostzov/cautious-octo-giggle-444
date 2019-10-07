@@ -6,8 +6,10 @@
 </head>
 <body>
 	<script>
-		let a = prompt('Введите целое положительное двузначное число').split('').concat.join(' ');
-		alert(a);
+		let [a,b] = prompt('Введите целое положительное двузначное число').split('');
+		let c = a*10;
+		let d = [c,b].join(' ');
+		alert(d);
 	</script>
 </body>
 </html>
