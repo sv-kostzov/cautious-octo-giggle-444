@@ -7,9 +7,9 @@
 <body>
   <script>
 	let a
-		a = [+prompt('Введите число').split('').join(',')].reduce((sum,current)=>sum+current,0);
-		
-	alert(a);
+		a = prompt('Введите число').split('');
+		let result = a.reduceRight((sum, current) => sum + +current, 0);
+	alert(result);
 	
   </script>
 </body>
