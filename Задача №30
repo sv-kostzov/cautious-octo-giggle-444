@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Задача №30</title>
+</head>
+<body>
+  <p>Напишите код, который принимает с клавиатуры целое положительное трехзначное число и выводит его на экран в «полном виде»: например, для числа 364 это будет выглядеть как 300 60 4.</p>
+  <script>
+    let arr = prompt ("Введите целое положительное трехзначное число").split('');
+    //document.write ((a[0]*100)+" "+(a[1]*10)+" "+a[2]);
+	for (let i = 0; i < arr.length; i++)
+	arr [i] *= 10**(arr.length - 1 - i);
+	alert (arr.join(' '));
+  </script>
+</body>
+</html>
