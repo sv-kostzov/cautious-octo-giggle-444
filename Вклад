@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <script>
+	let contr = +prompt("Введите сумму вклада");
+	let proc = +prompt ("Введите годовой процент");
+	let sum = 1;
+	for(let i = 0; i < 5; i++,s *= contr)
+  </script>
+</body>
+</html>
