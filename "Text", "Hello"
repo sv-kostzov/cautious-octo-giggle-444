@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сделайте текст</title>
+</head>
+<body>
+  <script>
+	let arr = "var_text_hello".split('_');
+	arr.splice(1, 2, "Text", "Hello");
+	alert(arr.join(''));
+  </script>
+</body>
+</html>
