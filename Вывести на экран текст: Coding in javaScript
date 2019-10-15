@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вывести на экран текст: Coding in javaScript</title>
+</head>
+<body>
+  <script>
+	let s1 = "Coding";
+    let s2 = "in";
+    let s3 = "javaScript";
+    document.write(s1 + " " + s2 + " " + s3);
+  </script>
+</body>
+</html>
