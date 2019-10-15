@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сделайте строку 'JS'</title>
+</head>
+<body>
+  <script>
+	let arr = 'js';
+	alert(arr.toUpperCase());
+  </script>
+</body>
+</html>
